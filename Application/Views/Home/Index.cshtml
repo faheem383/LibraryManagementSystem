@@ -1,0 +1,94 @@
+﻿@*@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>*@
+    <html ng-app="libraryapp">  
+        @{ ViewBag.Title = "ASP.NET5"; }  
+      
+        <head>  
+      
+      
+        </head>  
+      
+  <body ng-controller="libraryController">  
+  
+        <table width="99%" style="border-bottom:3px solid #3273d5;">  
+            <tr>  
+  
+                <td width="190">  
+                    <table width="99%">  
+                        <tr>  
+                            <td>  
+                                
+  
+                            </td>  
+  
+  
+                        </tr>  
+                        </table>  
+                        </td>  
+                        <td class="style1" align="center">  
+                            <h3>Library Management System</h3>  
+  
+  
+                            </td>  
+  
+            </tr>  
+            </table>  
+  
+            <table style="width: 99%; background-color:#FFFFFF; border:solid 2px #6D7B8D; padding:5px;width: 99%;table-layout:fixed;" cellpadding="2" cellspacing="2">  
+  
+                <tr style="height: 30px; background-color:#336699 ; color:#FFFFFF ;border: solid 1px #659EC7;">  
+                    <td width="40" align="center"><b> ID</b></td>  
+                        <td width="100" align="center"><b> Name </b></td>  
+                            <td width="120" align="center"><b>Address</b></td>  
+                                <td width="120" align="center"><b>Phone</b></td>  
+                                    
+                                        </tr>  
+                                        <tbody data-ng-repeat="details in library">  
+                                            <tr style="background-color:lightgray ">  
+  
+                                                <td align="center" style="border: solid 1px #659EC7; padding: 5px;table-layout:fixed;">  
+                                                    <span style="color:#000">  
+                                                        {{details.id}}  
+                                                        </span>  
+                                                        </td>  
+  
+                                                        <td align="center" style="border: solid 1px #659EC7; padding: 5px;table-layout:fixed;">  
+                                                            <span style="color:#000">  
+                                                                {{details.name}}  
+                                                                </span>  
+                                                                </td>  
+  
+                                                                <td valign="top" style="border: solid 1px #659EC7; padding: 5px;table-layout:fixed;">  
+                                                                    <span style="color:#000">  
+                                                                        {{details.address}}  
+                                                                        </span>  
+                                                                        </td>  
+  
+                                                                        <td valign="top" style="border: solid1px#659EC7; padding: 5px;table-layout:fixed;">  
+                                                                            <span style="color:#000">  
+                                                                                {{details.phone}} 
+                                                                                </span>  
+                                                                                </td>  
+                                                                                
+                                            </tr>  
+                                            </tbody>  
+                                            </table>  
+  
+  
+                                            </body>   
+      
+                                                </html>  
+      
+      
+                                                <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js">  
+                                                    </script>  
+                                                    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-resource.js">  
+                                                        </script>  
+                                                        <script src="~/app.js">  
+                                                            </script>  

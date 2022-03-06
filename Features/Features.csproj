@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="LibraryFeatures\**" />
+    <EmbeddedResource Remove="LibraryFeatures\**" />
+    <None Remove="LibraryFeatures\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Libraries\BooksFeatures\Commands\" />
+    <Folder Include="Members\BooksFeatures\Commands\" />
+    <Folder Include="Members\BooksFeatures\Queries\" />
+    <Folder Include="Members\UsersFeatures\Commands\" />
+    <Folder Include="Members\UsersFeatures\Queries\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

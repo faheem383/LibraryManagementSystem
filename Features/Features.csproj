@@ -13,13 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Members\BooksFeatures\Commands\" />
-    <Folder Include="Members\BooksFeatures\Queries\" />
-    <Folder Include="Members\UsersFeatures\Commands\" />
-    <Folder Include="Members\UsersFeatures\Queries\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
   </ItemGroup>

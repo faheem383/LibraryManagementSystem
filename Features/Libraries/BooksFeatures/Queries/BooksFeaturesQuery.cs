@@ -15,17 +15,7 @@ namespace Features.Libraries.BooksFeatures.Queries
 		{
 			db = _db;
 		}
-		public void AddCategory(string name)
-		{
-			if (!string.IsNullOrWhiteSpace(name))
-			{
-				Category category = new Category();
-				category.Name = name;	
-				db.Categories.Add(category);
-
-			}
-			
-		}
+	
 
 		public Author GetAuthor(int id)
 		{

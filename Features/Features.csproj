@@ -13,7 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Libraries\BooksFeatures\Commands\" />
     <Folder Include="Members\BooksFeatures\Commands\" />
     <Folder Include="Members\BooksFeatures\Queries\" />
     <Folder Include="Members\UsersFeatures\Commands\" />

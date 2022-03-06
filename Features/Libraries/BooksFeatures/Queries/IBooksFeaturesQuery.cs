@@ -14,7 +14,6 @@ namespace Features.Libraries.BooksFeatures.Queries
 		List<Domain.Libraries.Books.Author> GetAuthors();
 		Domain.Libraries.Books.Author GetAuthor(int id);
 		List<Domain.Libraries.Books.Category> GetCategories();
-		void AddCategory(string name);
 		List<Domain.Libraries.Books.PublishHouse> GetPublishHouses();
 
 

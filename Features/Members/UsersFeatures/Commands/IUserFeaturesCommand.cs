@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Features.Members.UsersFeatures.Commands
 {
-	interface IUserFeaturesCommand
+	public interface IUserFeaturesCommand
 	{
 		public void AddUser(Domain.Members.Users.User user);	
 

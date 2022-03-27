@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Features.Libraries.BooksFeatures.Commands
 {
-	interface IBooksFeaturesCommand
+	public interface IBooksFeaturesCommand
 	{
 		void AddCategory(string name);
 		public void AddBook(Domain.Libraries.Books.Book book);

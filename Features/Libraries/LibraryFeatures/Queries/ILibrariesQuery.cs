@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Features.Libraries.LibraryFeatures.Queries
 {
-	interface  ILibrariesQuery
+	public interface  ILibrariesQuery
 	{
 		
 		List<Domain.Libraries.library> GetAllLibraries();

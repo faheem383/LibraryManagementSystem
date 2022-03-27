@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Features.Members.UsersFeatures.Queries
 {
-	interface IUserFeaturesQuery
+	public interface IUserFeaturesQuery
 	{
 		List<Domain.Members.Users.User> GetUsers();
 		Domain.Members.Users.User GetUser(int id);

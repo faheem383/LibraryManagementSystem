@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Features.Libraries.BooksFeatures.Queries
 {
-	interface IBooksFeaturesQuery
+	public interface IBooksFeaturesQuery
 	{
 		List<Domain.Libraries.Books.Book> GetBooks();
 		Domain.Libraries.Books.Book GetBook(int id);

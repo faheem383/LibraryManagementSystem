@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Features.Members.BooksFeatures.Commands
 {
-	interface ILoandBookFeaturesCommand
+	public interface ILoandBookFeaturesCommand
 	{
 		void AddNewLoandBook(Domain.Members.Books.LoandBook book);
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Features.Libraries.LibraryFeatures.Commands
 {
-	interface ILibrariesCommand
+	public interface ILibrariesCommand
 	{
 		void AddNewLibrary(string name, string address, string phone);
 	}

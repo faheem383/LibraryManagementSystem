@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Features.Libraries.LibraryFeatures.Commands
 {
-	internal class LibrariesCommand : ILibrariesCommand
+	public  class LibrariesCommand : ILibrariesCommand
 	{
 		EFContext db;
 		public LibrariesCommand(EFContext _db)
